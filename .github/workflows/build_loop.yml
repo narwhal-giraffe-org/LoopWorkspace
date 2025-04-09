@@ -293,6 +293,9 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
+
+          # Module: File: lower insulin suspend and correction targets
+          curl https://github.com/narwhal-giraffe-org/LoopKit/commit/becaf1cd573805810bf5cba6067898871684dd8b.patch | git apply -v --directory=LoopKit
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
